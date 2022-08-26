@@ -160,7 +160,8 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;    
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;    
 }
 .title-transform{
     text-transform: uppercase;
@@ -269,6 +270,7 @@ body {
     column-gap: 30px;
 }
 /* flex-basis: calc((100%-90px)/4) */
+
 /* ===============   footer   =================================== */
 
 .address-maps {
@@ -279,6 +281,27 @@ body {
 .mailto-footer,
 .phone-footer{
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------------------------------------------- */
+/* позиционирование */
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer {
+    padding: 60px;
+}
+
+.div-footer-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-address-list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 9px;
 }
 /*================   portfolio   =========================== */
 
