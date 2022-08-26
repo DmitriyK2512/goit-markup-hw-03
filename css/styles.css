@@ -1,24 +1,43 @@
 /* сброс настроек браузера */
-.link {
-    text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.list {
-    list-style: none;
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
 }
 
 img {
     display: block;
 }
 
-/* ------------------------------------- */
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* ------------------------------------ */
 :root {
     /* палитра цветов */
     --primary-color: #212121;
     --secondary-color: #757575;
     --secondary-transparent-color: rgba(255, 255, 255, 0.6);
     --additional-color: #ffffff;
-
     --accent-color: #2196F3;
     /* текст */
     --primary-font-family: 'Roboto', sans-serif;
@@ -37,49 +56,48 @@ body {
     /* font-weight: 400; */
     font-size: 14px;
     line-height: 1.9;
+    text-align:center;
 }
 
 /* -------------------------------------------- */
-/* logo */
-.accent {
-    color: var(--accent-color);
+.container{
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
-
+/* ----------HEADER------------------------------ */
+/* logo */
 .logo {
     color: #000000;
-    font-family: Raleway;
+    font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
-    
 }
-
-.footer .logo {
+.logo-accent {
+    color: var(--accent-color);
+}
+.logo-footer {
     color: var(--additional-color);
 }
 
 .logo:hover {
     color: var(--accent-color);
 }
-
 /*-------------------------------------------------*/
-/* header */
-
+/* header - ссылки*/
 .menu-link {
     color: var(--primary-color);
 }
-
-.menu-link,
-.mailto,
-.contact-phone-number {
-    font-weight: 500;    
+.link-options{
+    font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     font-style: normal;
 }
-
-.menu-link:hover,
-.menu-link:focus {
+.link-options:hover,
+.link-options:focus {
     color: var(--accent-color);
 }
 
@@ -87,35 +105,66 @@ body {
 .contact-phone-number {
     color: var(--secondary-color);
 }
-
-
 .current {
     color: var(--accent-color);
 }
-
 /* --------------------------------------------------------- */
-/* задний фон */
-.hero,
-.footer {
-    background-color: var(--secondary-background-color);
+/* header -  позиционированиу */
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
+.div-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.header-nav{
+    display: flex;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;  
+}
+.logo-header{
+    margin-right: 93px;
+}
+.header-list{
+    display: flex;
+    column-gap: 50px;   
+}
+/* ---------------------------------------------------------- */
+/* background */
+.section-background{
+    background-color: var(--secondary-background-color);
+}
 .team {
     background-color: var(--accent-background-color);
 }
-
-/* ----------------------------------------------------------- */
+.section{
+    padding: 94px;
+}
+.benefits{
+    padding-bottom: 0px;
+}
+/* -------------------HERO----------------------------------- */
 /* hero */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 .hero-title {
     color: var(--additional-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.06em;    
+}
+.title-transform{
     text-transform: uppercase;
 }
-
-/*-------------------- */
 /* ---------------------------------------------- */
 /* кнопка */
 .button {
@@ -150,17 +199,7 @@ body {
     color: var(--accent-color);
 }
 
-/* ----------------------------------------------------------- */
-.benefits-list-title {    
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-}
-
-.benefits-list-text {
-    color: var(--secondary-color);    
-    line-height: 1.71;   
-}
+/* =============  benefits  =========== */
 /* скрываем заголовок */
 .visually-hidden {
     position: absolute;
@@ -172,51 +211,77 @@ body {
     padding: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
-    margin: -1px;
+    margin: -1px;    
 }
-/* --------------------------------------------------------- */
+/* ---------------------- */
+.section-text {
+    text-align: left;
+}
+.benefits-list-title {    
+    font-size: 14px;
+    line-height: 1.14;    
+}
+
+.benefits-list-text {
+    color: var(--secondary-color);    
+    line-height: 1.71;   
+}
+/* ------------------------- */
+/* позиционирование */
+.benefits-list{
+    display: flex;
+    column-gap: 30px;
+}
+.benefits-list-item {
+    flex-basis: calc((100%-90px)/4);
+}
+/* ===============   work   ============================ */
 /* заголовки для секции work и team */
-.work-title,
-.team-title {   
+.title {   
     font-size: 36px;
-    line-height: 1.17;    
+    line-height: 1.17;
+    margin-bottom: 50px;    
 }
-/* ------------------------------------------------------- */
-/* team */
+/* ------------------------- */
+/* позиционирование */
+.work-list{
+    display: flex;
+    column-gap: 30px;
+}
+ /* flex-basis: calc((100%-60px)/3) */
+/* =============   team   ================================ */
+
 .team-list-item-title {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;    
-}
+    margin-top:30px;
+    margin-bottom: 10px;
+}    
 .team-list-item-text {
     color: var(--secondary-color);    
     font-size: 16px;
-    line-height: 1.19;    
+    margin-bottom: 30px;
+   }
+/* ----------------------- */
+/* позиционирование */
+.team-list{
+    display: flex;
+    column-gap: 30px;
 }
-/* --------------------------------------------- */
-/* footer */
+/* flex-basis: calc((100%-90px)/4) */
+/* ===============   footer   =================================== */
+
 .address-maps {
     color: var(--additional-color);    
     line-height: 1.71;   
     font-style: normal;
 }
-
-
-.address-maps > .mailto,
-.address-maps > .contact-phone-number {
+.mailto-footer,
+.phone-footer{
     color: rgba(255, 255, 255, 0.6);
 }
-.contact-phone-number:hover,
-.contact-phone-number:focus {
-    color: var(--accent-color);
-}
+/*================   portfolio   =========================== */
 
-.mailto:hover,
-.mailto:focus {
-    color: var(--accent-color);
-}
-/* ------------------------------------------------------ */
-/* portfolio-*/
 .portfolio-link-title{ 
     color: var(--primary-color);   
     font-size: 18px;
