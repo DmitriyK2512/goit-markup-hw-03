@@ -1,0 +1,143 @@
+/* сброс настроек браузера */
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+/* ------------------------------------- */
+:root {
+    /* палитра цветов */
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --secondary-transparent-color: rgba(255, 255, 255, 0.6);
+    --additional-color: #ffffff;
+
+    --accent-color: #2196F3;
+    /* текст */
+    --primary-font-family: 'Roboto', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+    /* фон */
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #2F303A;
+    --accent-background-color: #F5F4FA;
+}
+
+body {
+    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    background-color: var(--primary-background-color);
+}
+
+/* -------------------------------------------- */
+/* logo */
+.accent{
+    color: var(--accent-color);
+}
+.logo{
+    color: #000000;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;   
+    letter-spacing: 0.03em;
+}
+.footer .logo{
+    color: var(--additional-color);
+}
+.logo:hover{
+    color: var(--accent-color);
+}
+/*-------------------------------------------------*/
+/* header */
+
+.menu-link {
+    color: var(--primary-color);    
+}
+.menu-link,
+.mailto,
+.contact-phone-number{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+.mailto,
+.contact-phone-number {
+    color: var(--secondary-color);
+}
+.contact-phone-number:hover,
+.contact-phone-number:focus {
+    color: var(--accent-color);
+}
+
+.mailto:hover,
+.mailto:focus {
+    color: var(--accent-color);
+}
+.current {
+    color: var(--accent-color);
+}
+/* --------------------------------------------------------- */
+/* задний фон */
+.hero,
+.footer{
+    background-color: var(--secondary-background-color);
+}
+.team{
+    background-color: var(--accent-background-color);
+}
+/* ----------------------------------------------------------- */
+/* hero */
+.hero-title{
+    color: var(--additional-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+}
+/*-------------------- */
+/* ---------------------------------------------- */
+/* кнопка */
+.button {    
+    cursor: pointer;    
+    font-size: 16px;    
+}
+.button-primary {
+    color: var(--additional-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+}
+.button-secondary {
+    color: var(--primary-color);
+    background-color: var(--accent-background-color);
+    font-weight: 500;    
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+.button-primary:hover,
+.button-primary:focus {
+    background-color: #188CE8;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+    color: var(--additional-color);
+    background-color: var(--accent-color);
+}
+/* ----------------------------------------------------------- */
+
+
+
