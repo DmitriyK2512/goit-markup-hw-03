@@ -113,6 +113,8 @@ body {
 .header{
     padding-top: 24px;
     padding-bottom: 25px;
+    border: 1px solid #ECECEC;
+
 }
 
 .div-header{
@@ -149,8 +151,7 @@ body {
 .benefits{
     padding-bottom: 0px;
 }
-/* -------------------HERO----------------------------------- */
-/* hero */
+/* ============   HERO   ======================= */
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -184,7 +185,7 @@ body {
     color: var(--primary-color);
     background-color: var(--accent-background-color);
     font-weight: 500;
-    line-height: 1.6;    
+    line-height: 1.6;       
 }
 .button-primary:hover,
 .button-primary:focus {
@@ -249,8 +250,11 @@ body {
     display: flex;
     column-gap: 30px;
 }
- /* flex-basis: calc((100%-60px)/3) */
-/* =============   team   ================================ */
+.work-list-item{
+    flex-basis: calc((100%-60px)/3)
+}
+
+ /* =============   team   ================================ */
 
 .team-list-item-title {
     font-weight: 500;
@@ -269,7 +273,9 @@ body {
     display: flex;
     column-gap: 30px;
 }
-/* flex-basis: calc((100%-90px)/4) */
+.team-list-item{
+    flex-basis: calc((100%-90px)/4)
+}
 
 /* ===============   footer   =================================== */
 
@@ -313,10 +319,12 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-left: 24px;
 }
 .portfolio-link-text{
     color: var(--secondary-color);   
-    font-size: 16px;      
+    font-size: 16px;
+    margin-left: 24px;
 }
 /*----------------------------------------------------------*/
 /* позиционирование */
@@ -326,14 +334,20 @@ display: flex;
 justify-content: center;
 column-gap: 8px;
 margin-bottom: 50px;
+    
 }
 
  .portfolio-links-list {    
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    
- } 
+    gap: 30px;    
+ }
+
+  .portfolio-link-item{
+    border-bottom: 1px solid #EEEEEE;
+    /* flex-basis: calc((100%-60px)/3); */
+ }  
+ /* ---------------------------------------------------------- */
 
 
 
