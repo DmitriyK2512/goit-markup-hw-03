@@ -478,7 +478,7 @@ body {
     align-items: baseline;
 }
 
-.footer-address-list {
+.footer-address-div {
     display: flex;
     margin-right: 70px;
     flex-direction: column;
